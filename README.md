@@ -41,7 +41,11 @@ Cette commande crée une image Docker nommée sales-analysis-app qui contient to
 
 Pour exécuter l'application et générer les rapports, utilisez la commande suivante :
 
-Sur Windows :
+Sur Windows (dans PowerShell) :
+    
+    docker run -v ${PWD}/output:/app/output sales-analysis-app
+
+sur Window (dans Command Prompt) : 
 
     docker run -v "C:\<NOM_DU_REPERTOIRE>\output:/app/output" sales-analysis-app
 
