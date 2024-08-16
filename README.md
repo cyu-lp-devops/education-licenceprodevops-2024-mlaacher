@@ -11,17 +11,6 @@ Ce projet analyse des données de ventes à partir d'un fichier CSV, génère de
 
 ## Instructions
 
-Pour construire l'image Docker, exécutez la commande suivante :
-
-    docker build -t sales-analysis-app .
-
-Pour analyser les données et générer le rapport, utilisez la commande suivante :
-
-    docker run -v $(pwd)/output:/app/output sales-analysis-app
-
-
-Le rapport et les graphiques seront générés dans le dossier output/.
-
 ### 1. Cloner le dépôt
 
 
