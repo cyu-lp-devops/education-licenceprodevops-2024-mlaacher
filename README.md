@@ -13,11 +13,11 @@ Ce projet analyse des données de ventes à partir d'un fichier CSV, génère de
 
 Pour construire l'image Docker, exécutez la commande suivante :
 
-docker build -t sales-analysis-app .
+    docker build -t sales-analysis-app .
 
 Pour analyser les données et générer le rapport, utilisez la commande suivante :
 
-docker run -v $(pwd)/output:/app/output sales-analysis-app
+    docker run -v $(pwd)/output:/app/output sales-analysis-app
 
 
 Le rapport et les graphiques seront générés dans le dossier output/.
@@ -25,11 +25,11 @@ Le rapport et les graphiques seront générés dans le dossier output/.
 ### 1. Cloner le dépôt
 
 
-git clone https://github.com/Koundidjo/sale_analysis.git
+    git clone https://github.com/Koundidjo/sale_analysis.git
 
 Une fois le dépôt cloné, accédez au répertoire du projet :
 
-cd <NOM_DU_REPERTOIRE>.
+    cd <NOM_DU_REPERTOIRE>.
 
 
 ### 2. Structure des fichiers
@@ -44,7 +44,7 @@ Le projet devrait contenir les fichiers suivants :
 ### 3. Construire l'image Docker
 Pour préparer l'environnement d'exécution, vous devez d'abord construire l'image Docker en utilisant le Dockerfile fourni. Exécutez la commande suivante dans le terminal :
 
-docker build -t sales-analysis-app .
+    docker build -t sales-analysis-app .
 
 Cette commande crée une image Docker nommée sales-analysis-app qui contient toutes les dépendances nécessaires, telles que pandas, numpy et matplotlib.
 
@@ -54,11 +54,11 @@ Pour exécuter l'application et générer les rapports, utilisez la commande sui
 
 Sur Windows :
 
-docker run -v "C:\<NOM_DU_REPERTOIRE>\output:/app/output" sales-analysis-app
+    docker run -v "C:\<NOM_DU_REPERTOIRE>\output:/app/output" sales-analysis-app
 
 Sur macOS ou Linux :
 
-docker run -v $(pwd)/output:/app/output sales-analysis-app
+    docker run -v $(pwd)/output:/app/output sales-analysis-app
 
 ### 5. Vérifier les résultats
 
@@ -72,15 +72,15 @@ Pour libérer de l'espace sur votre machine, vous pouvez nettoyer les conteneurs
 
 Lister les conteneurs Docker :
 
-docker ps -a
+    docker ps -a
 
 Supprimer un conteneur spécifique :
 
-docker rm <ID_DU_CONTENEUR>
+    docker rm <ID_DU_CONTENEUR>
 
 Supprimer l'image Docker :
 
-docker rmi sales-analysis-app
+    docker rmi sales-analysis-app
 
 ### 7. Résolution des problèmes
 Problèmes de compatibilité
